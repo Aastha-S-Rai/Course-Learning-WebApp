@@ -29,7 +29,14 @@ const Course = (props) => {
     navigate("/courselist");
   };
   return (
-    <div className="container">
+    <div className="main-container">
+      <Link to='/language'>
+      <button className="quizz">
+        Quiz
+      </button>
+      </Link>
+      
+<div className="container">
       {/* <h1>Hellooooo</h1> */}
 
       {arr.map((item) => (
@@ -58,6 +65,8 @@ const Course = (props) => {
 
       {/* <YoutubeEmbed embedId="videoseries?si=xrd-LHQ4bdiuXQeQ&amp;list=PLA2qUUcBFumm9SQYt14cyyr7flLsNm-Qu" /> */}
     </div>
+    </div>
+    
   );
 };
 
